@@ -1,0 +1,29 @@
+
+DAY 12 - MACHINE LEARNING MODEL EVALUATION
+
+Dataset: Breast Cancer Wisconsin
+Total records: 569
+Training records: 455
+Testing records: 114
+
+MODEL PERFORMANCE
+              Model  Accuracy  Precision  Recall  F1 Score
+Logistic Regression    0.9825     0.9825  0.9825    0.9825
+      Decision Tree    0.9123     0.9161  0.9123    0.9130
+
+Best model by weighted F1-score: Logistic Regression
+Recall for malignant cases: 0.9762
+
+CONCLUSION
+Accuracy measures overall correctness.
+Precision measures the reliability of positive predictions.
+Recall measures how many actual cases are identified.
+F1-score balances precision and recall.
+
+For this dataset, malignant-class recall is particularly
+important because missing a malignant case can be serious.
+The model should be assessed alongside its precision,
+F1-score, and confusion matrix.
+
+This is an educational model evaluation, not a clinical
+diagnostic system.
