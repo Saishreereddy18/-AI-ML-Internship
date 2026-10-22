@@ -1,96 +1,77 @@
-# Day 14: End-to-End Machine Learning Project
+# Email Spam Detection – End-to-End Machine Learning Project
 
-## Project Title
+## Project Overview
 
-**Spam Message Detection Using Machine Learning**
+This project uses Machine Learning and Natural Language Processing (NLP) to classify emails as **Spam** or **Ham (Not Spam)**. It uses the Enron email spam dataset and a Multinomial Naive Bayes classifier.
 
-## 1. Project Overview
+## Objectives
 
-This project uses Natural Language Processing (NLP) and Machine Learning to classify text messages as Spam or Ham (Not Spam). The model learns patterns from labelled messages and predicts the category of new messages.
+- Load and preprocess email data.
+- Combine email subjects and message bodies.
+- Convert email text into numerical features using TF-IDF.
+- Train and evaluate a machine learning model.
+- Predict whether new email text is spam or not spam.
+- Save the trained model for reuse.
 
-## 2. Objective
+## Dataset
 
-- Build a practical end-to-end Machine Learning project.
-- Clean and explore the dataset.
-- Convert text messages into numerical features.
-- Train a classification model.
-- Evaluate the model using appropriate metrics.
-- Test new messages and save the trained model.
+**Dataset:** Enron Email Spam Dataset  
+**File:** `data/enron_spam_data.csv`
 
-## 3. Technologies Used
+The dataset includes email subjects, message bodies, and labels indicating spam or ham.
+
+## Technologies Used
 
 - Python
 - Pandas and NumPy
 - Matplotlib and Seaborn
 - Scikit-learn
-- Jupyter Notebook
+- TF-IDF Vectorization
+- Multinomial Naive Bayes
 - Joblib
 
-## 4. Dataset
+## Project Workflow
 
-The project uses the SMS Spam Collection dataset from the UCI Machine Learning Repository.
-
-Dataset source: https://archive.ics.uci.edu/dataset/228/sms+spam+collection
-
-The dataset contains text messages labelled as:
-
-- **Ham:** A legitimate message.
-- **Spam:** An unwanted or potentially fraudulent message.
-
-## 5. Project Workflow
-
-1. Load and inspect the dataset.
-2. Handle missing values and remove duplicate messages.
-3. Visualize the distribution of message categories.
+1. Load the email dataset.
+2. Clean missing values, empty messages, and duplicate records.
+3. Visualize the distribution of spam and ham emails.
 4. Split the data into training and testing sets.
-5. Convert message text into numerical features using TF-IDF.
-6. Train a Multinomial Naive Bayes classifier.
-7. Evaluate predictions using accuracy, precision, recall, F1-score, and a confusion matrix.
-8. Test the model with new messages.
-9. Save the trained model and evaluation results.
+5. Convert text into numerical features using TF-IDF.
+6. Train the Multinomial Naive Bayes model.
+7. Evaluate performance using accuracy, precision, recall, F1-score, and a confusion matrix.
+8. Save the trained model and prediction results.
+9. Test the model using the interactive Python demo.
 
-## 6. Machine Learning Algorithm
+## Project Files
 
-**Multinomial Naive Bayes** is a probabilistic classification algorithm commonly used for text classification. It learns patterns from labelled training examples and predicts whether a message is spam or ham.
+- `Spam_Detection_Project.ipynb` – Data preprocessing, training, and evaluation.
+- `data/enron_spam_data.csv` – Email dataset.
+- `spam_detection_model.pkl` – Saved model and TF-IDF vectorizer.
+- `prediction_results.csv` – Actual and predicted labels.
+- `spam_detection_demo.py` – Interactive email spam detection demo.
+- `requirements.txt` – Required Python packages.
+- `screenshots/` – Project output screenshots.
 
-TF-IDF is used to represent text as numerical features before training.
+## Run the Project
 
-## 7. Model Evaluation
+Install the dependencies:
 
-The model is evaluated on a separate test dataset.
+```bash
+pip install -r requirements.txt
+```
 
-- **Accuracy:** Measures the proportion of correct predictions.
-- **Precision:** Measures how many messages predicted as spam are actually spam.
-- **Recall:** Measures how many actual spam messages are detected.
-- **F1-score:** Combines precision and recall.
-- **Confusion matrix:** Shows correct and incorrect classifications.
+Run the interactive demo from the project folder:
 
-**Actual evaluation results:** Add the accuracy, precision, recall, and F1-score from the completed notebook here.
+```bash
+python spam_detection_demo.py
+```
 
-## 8. Project Files
+Enter an email subject or message to receive a spam prediction. Type `exit` to close the application.
 
-- `Spam_Detection_Project.ipynb` — complete project notebook.
-- `spam_detection_model.pkl` — saved model and TF-IDF vectorizer.
-- `prediction_results.csv` — actual and predicted test labels.
-- `requirements.txt` — required Python libraries.
-- `data/` — local dataset directory.
-- `screenshots/` — project output screenshots.
+## Model Evaluation
 
-## 9. How to Run the Project
+The model is evaluated using accuracy, precision, recall, F1-score, and a confusion matrix. Add the actual scores obtained by running the updated notebook.
 
-1. Clone or download the repository.
-2. Install the required dependencies using `python -m pip install -r requirements.txt`.
-3. Download the SMS Spam Collection dataset from the official UCI source.
-4. Place the extracted `SMSSpamCollection` file inside the `data/` directory.
-5. Open `Spam_Detection_Project.ipynb` in VS Code or Jupyter Notebook.
-6. Select the appropriate Python environment and run the notebook cells in order.
+## Conclusion
 
-## 10. Conclusion
-
-This project demonstrates an end-to-end Machine Learning workflow for text classification, including data cleaning, text vectorization, model training, evaluation, and prediction. It provides practical experience in applying NLP and Scikit-learn to a real-world classification problem.
-
-## 11. Author
-
-**Billa Sai Sree**
-
-AI/ML Internship Project — Day 14
+This project demonstrates an end-to-end text classification workflow, from email data preprocessing to model training, evaluation, saving, and prediction. It can serve as a starting point for building email spam filtering applications.
