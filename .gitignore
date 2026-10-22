@@ -1,3 +1,8 @@
 Day-7-Student-Performance-Analysis/project_demo.mp4
 
 project_demo.mp4
+
+# Python virtual environments
+.venv/
+__pycache__/
+*.pyc
