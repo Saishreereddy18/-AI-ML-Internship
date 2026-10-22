@@ -1,52 +1,77 @@
-# AI/ML Internship
+# Email Spam Detection – End-to-End Machine Learning Project
 
-👋 About Me
+## Project Overview
 
-Hi, I'm **Billa Sai Sree**, a B.Tech Computer Science Engineering student graduating in 2027.
+This project uses Machine Learning and Natural Language Processing (NLP) to classify emails as **Spam** or **Ham (Not Spam)**. It uses the Enron email spam dataset and a Multinomial Naive Bayes classifier.
 
-I am interested in **Artificial Intelligence, Machine Learning, Generative AI, and Data Analytics**. I am currently strengthening my Python, SQL, Machine Learning, and AI skills through hands-on learning and projects.
+## Objectives
 
-🎯 Internship Goals
+- Load and preprocess email data.
+- Combine email subjects and message bodies.
+- Convert email text into numerical features using TF-IDF.
+- Train and evaluate a machine learning model.
+- Predict whether new email text is spam or not spam.
+- Save the trained model for reuse.
 
-During this AI/ML internship, my goals are to:
+## Dataset
 
-- Strengthen my Python and programming fundamentals
-- Learn Machine Learning and Deep Learning concepts
-- Understand Generative AI and Large Language Models
-- Learn practical AI/ML development workflows
-- Build real-world AI/ML projects
-- Improve problem-solving and technical skills
-- Learn Git and GitHub for version control
-- Understand how AI/ML projects are developed and deployed
-- Prepare myself for AI/ML Engineer and AI Developer opportunities
+**Dataset:** Enron Email Spam Dataset  
+**File:** `data/enron_spam_data.csv`
 
-🛠️ Technologies I Am Learning
+The dataset includes email subjects, message bodies, and labels indicating spam or ham.
+
+## Technologies Used
 
 - Python
-- SQL
-- NumPy
-- Pandas
-- Machine Learning
-- Deep Learning
-- Generative AI
-- Git & GitHub
-- Jupyter Notebook
-- VS Code
+- Pandas and NumPy
+- Matplotlib and Seaborn
+- Scikit-learn
+- TF-IDF Vectorization
+- Multinomial Naive Bayes
+- Joblib
 
-📚 Internship Learning Journey
+## Project Workflow
 
-This repository will contain my learning progress, practice work, projects, and important resources throughout the AI/ML internship.
+1. Load the email dataset.
+2. Clean missing values, empty messages, and duplicate records.
+3. Visualize the distribution of spam and ham emails.
+4. Split the data into training and testing sets.
+5. Convert text into numerical features using TF-IDF.
+6. Train the Multinomial Naive Bayes model.
+7. Evaluate performance using accuracy, precision, recall, F1-score, and a confusion matrix.
+8. Save the trained model and prediction results.
+9. Test the model using the interactive Python demo.
 
-Day 1
+## Project Files
 
-- AI, Machine Learning, Deep Learning and Generative AI fundamentals
-- AI/ML Engineer roadmap
-- Python environment setup
-- VS Code setup
-- Git and GitHub setup
-- Jupyter Notebook setup
-- First Git commit
+- `Spam_Detection_Project.ipynb` – Data preprocessing, training, and evaluation.
+- `data/enron_spam_data.csv` – Email dataset.
+- `spam_detection_model.pkl` – Saved model and TF-IDF vectorizer.
+- `prediction_results.csv` – Actual and predicted labels.
+- `spam_detection_demo.py` – Interactive email spam detection demo.
+- `requirements.txt` – Required Python packages.
+- `screenshots/` – Project output screenshots.
 
-🚀 Goal
+## Run the Project
 
-My goal is to develop practical AI/ML skills and become job-ready for **AI/ML Engineer and AI Developer roles**.
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the interactive demo from the project folder:
+
+```bash
+python spam_detection_demo.py
+```
+
+Enter an email subject or message to receive a spam prediction. Type `exit` to close the application.
+
+## Model Evaluation
+
+The model is evaluated using accuracy, precision, recall, F1-score, and a confusion matrix. Add the actual scores obtained by running the updated notebook.
+
+## Conclusion
+
+This project demonstrates an end-to-end text classification workflow, from email data preprocessing to model training, evaluation, saving, and prediction. It can serve as a starting point for building email spam filtering applications.
