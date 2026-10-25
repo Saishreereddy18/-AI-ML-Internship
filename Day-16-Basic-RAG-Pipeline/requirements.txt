@@ -1,0 +1,9 @@
+
+jupyter
+pandas
+numpy
+matplotlib
+scikit-learn
+sentence-transformers
+chromadb
+faiss-cpu

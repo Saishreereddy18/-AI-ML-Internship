@@ -1,0 +1,25 @@
+Chunk Size,Question,Expected Information,Retrieved Correctly
+200,How many paid leaves do employees receive?,18 paid leaves per calendar year,Yes
+200,How many days can employees work from home?,Up to two days per week,Yes
+200,What is the IT support email address?,itsupport@novatech.example,Yes
+200,When should expense receipts be submitted?,Within 30 days of the expense date,Yes
+200,How often are employee performance reviews conducted?,Twice a year,Yes
+200,When must onboarding activities be completed?,During the first week,No
+200,What authentication security measure is required?,Multi-factor authentication,Yes
+200,What are the company's standard working hours?,"Monday to Friday, 9:30 AM to 6:00 PM",No
+500,How many paid leaves do employees receive?,18 paid leaves per calendar year,Yes
+500,How many days can employees work from home?,Up to two days per week,Yes
+500,What is the IT support email address?,itsupport@novatech.example,Yes
+500,When should expense receipts be submitted?,Within 30 days of the expense date,Yes
+500,How often are employee performance reviews conducted?,Twice a year,Yes
+500,When must onboarding activities be completed?,During the first week,No
+500,What authentication security measure is required?,Multi-factor authentication,Yes
+500,What are the company's standard working hours?,"Monday to Friday, 9:30 AM to 6:00 PM",No
+1000,How many paid leaves do employees receive?,18 paid leaves per calendar year,Yes
+1000,How many days can employees work from home?,Up to two days per week,Yes
+1000,What is the IT support email address?,itsupport@novatech.example,Yes
+1000,When should expense receipts be submitted?,Within 30 days of the expense date,Yes
+1000,How often are employee performance reviews conducted?,Twice a year,Yes
+1000,When must onboarding activities be completed?,During the first week,No
+1000,What authentication security measure is required?,Multi-factor authentication,Yes
+1000,What are the company's standard working hours?,"Monday to Friday, 9:30 AM to 6:00 PM",No

@@ -1,0 +1,31 @@
+# NovaTech Company Documentation
+
+## Company Overview
+NovaTech Solutions is a technology company founded in 2018. It develops AI-powered software, cloud applications, and data analytics solutions for businesses. Its main office is located in Hyderabad, India.
+
+## Working Hours
+The standard working hours are Monday to Friday, from 9:30 AM to 6:00 PM. Employees should contact their team manager if they need an exception to the regular schedule.
+
+## Leave Policy
+Employees receive 18 paid leaves per calendar year. Leave requests should be submitted through the company's HR portal and approved by the reporting manager before the leave begins, except in emergencies.
+
+## Work From Home Policy
+Employees may work from home up to two days per week, subject to manager approval and project requirements. Employees must remain reachable during working hours.
+
+## IT Support
+Employees can contact the IT support team by emailing itsupport@novatech.example. IT support handles laptop issues, software installation requests, network problems, and account-access issues.
+
+## Security Policy
+Employees must use strong passwords and enable multi-factor authentication where available. Company data must not be shared with unauthorized individuals. Suspicious emails should be reported to the IT security team.
+
+## Training and Development
+NovaTech provides technical training in Python, machine learning, cloud computing, and data analytics. Employees can request training through their department manager.
+
+## Expense Reimbursement
+Employees must submit eligible business expense receipts through the finance portal within 30 days of the expense date. Reimbursement requests require manager approval.
+
+## Performance Reviews
+Employee performance reviews take place twice a year. Reviews consider work quality, teamwork, goal completion, and professional development.
+
+## New Employee Onboarding
+New employees must complete HR documentation, attend an orientation session, configure their company accounts, and complete mandatory security training during their first week.
