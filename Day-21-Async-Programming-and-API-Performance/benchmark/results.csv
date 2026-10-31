@@ -1,0 +1,7 @@
+API,Round,Average Latency (ms),Total Time (seconds),Throughput (requests/second)
+Day 17 - Sync,1,143.973,0.181,110.423
+Day 21 - Async,1,112.466,0.159,125.725
+Day 17 - Sync,2,89.266,0.135,148.234
+Day 21 - Async,2,95.645,0.155,129.132
+Day 17 - Sync,3,80.943,0.135,148.504
+Day 21 - Async,3,109.066,0.153,130.49
