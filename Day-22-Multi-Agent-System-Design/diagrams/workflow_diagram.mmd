@@ -1,0 +1,21 @@
+
+flowchart TD
+    A([User Research Query]) --> B[Coordinator Agent]
+    B --> C[Research Agent]
+    C --> D[Collect Research Information]
+    D --> E[Analyzer Agent]
+    E --> F[Analyze Findings and Extract Insights]
+    F --> G[Critic Agent]
+    G --> H{Content Valid?}
+    H -->|No| I[Send Feedback and Corrections]
+    I --> C
+    H -->|Yes| J[Writer Agent]
+    J --> K[Generate Final Research Report]
+    K --> L[Coordinator Agent]
+    L --> M([Deliver Final Report to User])
+
+    B -.-> N[(Shared State)]
+    C -.-> N
+    E -.-> N
+    G -.-> N
+    J -.-> N
