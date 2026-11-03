@@ -1,0 +1,20 @@
+
+flowchart TD
+    A([User Request]) --> B[Coordinator Agent]
+    B --> C[Research Agent]
+    C --> D[Analyzer Agent]
+    D --> E[Critic Agent]
+
+    E --> F{Approved?}
+
+    F -->|Yes| G[Writer Agent]
+    G --> H([Final Answer])
+
+    F -->|No, retry available| D
+    F -->|No, retry limit reached| I([Stop])
+
+    D -->|Empty Analysis| I
+
+    style A fill:#dbeafe,stroke:#2563eb
+    style H fill:#dcfce7,stroke:#16a34a
+    style I fill:#fee2e2,stroke:#dc2626

@@ -1,0 +1,31 @@
+
+sequenceDiagram
+    actor User
+    participant C as Coordinator
+    participant R as Research
+    participant A as Analyzer
+    participant Cr as Critic
+    participant W as Writer
+    participant S as Shared State
+
+    User->>C: Submit user query
+    C->>S: Store user query
+    C->>R: Forward request
+
+    R->>S: Store research findings
+    R->>A: Send research data
+
+    A->>S: Store analysis
+    A->>Cr: Submit analysis
+
+    Cr->>S: Store feedback and approval
+
+    alt Analysis approved
+        Cr->>W: Send approved analysis
+        W->>S: Store final answer
+        W-->>User: Return final response
+    else Analysis rejected
+        Cr->>A: Request retry if allowed
+    else Empty analysis or retry limit reached
+        Cr-->>User: Workflow stops
+    end
