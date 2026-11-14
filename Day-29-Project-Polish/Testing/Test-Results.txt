@@ -1,0 +1,29 @@
+# Day 29 – Project Testing Results
+
+**Project:** AI Career Copilot
+
+**Testing Environment:**
+- Python Version: 3.12.10
+- Virtual Environment: Separate project `.venv`
+- Testing Framework: Pytest
+
+## Test Execution
+
+Command:
+`python -m pytest -q`
+
+## Test Results
+
+- Total Tests: 36
+- Passed: 36
+- Failed: 0
+- Warnings: 1
+- Execution Time: 11.67 seconds
+
+## Warning
+
+One DeprecationWarning related to `langchain-community` FAISS integration.
+
+## Final Status
+
+All 36 tests passed successfully. No test failures were reported.
